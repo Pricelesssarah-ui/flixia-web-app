@@ -1,0 +1,468 @@
+/*Global styling*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/*Navigation Bar*/
+
+.header {
+    display: flex; 
+    width: 100%; 
+    background-color: #b6c1d6;
+}
+.logo img{
+    width: 30%;
+    margin: 2rem 2rem;
+}
+.navbar {
+    text-align: right;
+    padding: 0 0.2rem;
+    margin: 1rem 0;
+}
+.hamburger {
+    font-style: normal;
+    font-size: 2rem;
+    color: black;
+    display: none;
+}
+ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 0 0.1rem;
+    margin: 40px;
+}
+li {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: rgb(241, 6, 171);
+}
+
+
+
+
+/*Main Body*/
+
+.main {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/img1.jpg);
+    background-size: cover;
+}
+.text1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 13rem 0 0 5rem;
+    font-size: 1.3rem;
+}
+.text1 p {
+    color:  rgb(241, 6, 171);
+    padding: 0.5rem;
+    font-weight: bold;
+}
+.text1 h2 {
+    padding: 0.5rem;
+}
+.text1 h5 {
+    padding: 0.5rem;
+}
+span {
+   color: rgb(241, 6, 171);
+   font-style: italic;
+}
+button {
+    padding: 0.9rem;
+    margin-top: 0.9rem;
+    border-radius: 15px;
+    color: white;
+    background: black;
+}
+button:hover {
+    color: rgb(241, 6, 171);
+    cursor: pointer;
+}
+
+
+
+
+/*Service*/
+
+.about {
+    margin: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.text2 {
+    text-align: center;
+    margin: 3rem;
+}
+.text2 h1 {
+    font-size: 3rem;
+}
+.text3 p {
+    margin-top: 1rem;
+}
+.container-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+    width: 100%;
+}
+.row {
+    box-shadow: 0 0 1.2rem 0 #ccc;
+    padding: 3rem;
+    margin: 5rem 0 3rem 7rem;
+    width: 40%;
+    height: 15rem;
+}
+.row:hover {
+    color: white;
+    background-color: rgb(248, 195, 19);
+}
+.left {
+    margin: 5rem 2rem 0 0;
+    width: 40%;
+}
+.text-right {
+    margin-left: 7rem;
+    width: 80%;
+}    
+
+
+
+
+/*Sign Up page*/
+
+.container3 {
+    display: flex;
+    margin-top: 6rem;
+}
+.account {
+    width: 40%;
+    box-shadow: 0 0 12px 0 #ccc;
+    margin: 30px auto;
+    padding: 30px;
+}
+.create {
+    text-align: center;
+}
+label {
+    margin: 10px;
+    padding: 10px;
+}
+input {
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.send {
+    width: 30%;
+    color: white;
+    margin: 10px;
+    border: none;
+    background-color: rgb(3, 130, 248);
+}
+.send:hover {
+    cursor: pointer;
+    color: black;
+}
+.terms {
+    font-style: italic;
+    text-align: center;
+}
+.termscolor {
+    color: rgb(3, 130, 248);
+}
+
+
+
+
+/*Footer*/
+.containerFooter {
+    background-color: rgb(44, 43, 43);
+    margin: 15px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+h6 .menu-color {
+    color: rgb(248, 195, 19);
+    font-size: 2rem;
+}
+p .menu-color {
+    color: rgb(248, 195, 19);
+}
+.txt-specials {
+    color: var(--myColor);
+    margin: 20px;
+    font-size: 15px;
+}
+.socials {
+    color: var(--myColor);
+    margin: 10px;
+}
+
+
+
+
+@media  (min-width: 320px) and (max-width: 700px) {
+
+/*Navigation Bar*/
+
+    .header {
+        display: flex;
+        width: 100%;
+        padding: 2rem;
+        margin: 0;
+    }
+    .logo img{
+        padding: 0;
+        width: 5rem;
+        margin: 0.2rem 0 0 0.1rem;
+        line-height: 0;
+    }
+    .hamburger {
+        display: block;
+        font-style: normal;
+        line-height: 0;
+        font-size: 2rem;
+        color: black;   
+        margin: 1.5rem 0 1.5rem 12rem;
+        cursor: pointer;
+    }
+    ul li {
+        display: block;
+        margin-top: 10px;
+        margin: 0 0;
+        padding: 4px;
+    }
+    ul {
+        display: none;
+    }
+    .navbar {
+        margin: 0 0;
+        padding: 0;
+    }
+ 
+
+
+/*Main body*/
+
+    .main {
+        margin: 0;
+        max-width: 100%;
+        height: 40vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .text1 {
+        width: 70%;
+        margin: 2rem 0 0 5px;
+        font-size: 0.1rem;
+        padding: 2rem 0 2rem 1rem;
+    }
+    .text1 p {
+        padding: 0.1rem;
+        font-size: 0.7rem;
+    }
+    .text1 h1 {
+        padding: 0 0 0.5rem 0;
+        font-size: 1rem;
+    }
+    .text1 h5 {
+        padding: 0.1rem;
+        font-size: 0.5rem;
+    }
+    button {
+        padding: 0.5rem;
+    }
+    
+
+
+/*Service page*/
+    .about {
+        margin: 1rem 0 0 0;
+        width: 100%;
+    }
+    .text2 {
+        margin: 1rem;
+    }
+    .text3 p {
+        margin-top: 1rem;
+    }
+    .container-item {
+       
+        flex-direction: column;
+        margin-bottom: 3rem;
+        width: 100%;
+    }
+    .change {
+        flex-direction: column-reverse;
+    }
+    .img-left {
+        width: 80%;
+        height: 50%;
+    }
+    .img-right {
+        margin-left: 7rem;
+        margin: 0 0 0 0.2rem;
+        width: 80%;
+    }
+    .left {
+        margin: 5rem 0 0 0.2rem;
+    }
+    .row {
+        display: inline-block;
+        box-shadow: 0 0 1.2rem 0 #ccc;
+        padding: 20px;
+        margin: 20px;
+        width: 80%;
+        height: 30%;
+    }
+
+
+
+/*Sign Up page*/
+
+    .container3 {
+        display: block;
+    }
+    .account {
+        width: 80%;
+    }
+    .create {
+        padding: 1rem;
+        font-size: 25px;
+    }
+    .send {
+        width: 100%;
+    }
+
+}
+
+
+
+
+@media (min-width: 720px) and (max-width: 1020px) {
+
+/*Navigation Bar*/
+
+    .header {
+        display: flex;
+        padding: 1.5rem;
+        margin: 0;
+    }
+    .logo img{
+        width: 10rem;
+        margin: 0rem 0 0 1rem;
+        line-height: 0;
+    }
+    .hamburger {
+        display: block;
+        font-style: normal;
+        line-height: 0;
+        color: black;
+        font-size: 3rem; 
+        margin: 2rem 0 0 30rem;
+        cursor: pointer;
+    }
+    .navbar {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+    ul li {
+        display: block;
+        margin: 1rem 0;
+        padding: 1em;
+    }
+    ul {
+        display: block;
+    }
+
+
+
+/*Main body*/
+
+    .main {
+        margin: 0;
+        width: 100%;
+        height: 50vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .text1 {
+        width: 100%;
+        margin: 9rem 0 0 0.5rem;
+        font-size: 1rem;
+        padding: 2rem;
+    }
+    .text1 p {
+        padding: 0.1rem;
+    }
+    .text1 h2 {
+        padding: 0 0 0.3rem 0;
+    }
+    .text1 h5 {
+        padding: 0.1rem;
+    }
+    button {
+        font-size: 1.5rem;
+        padding: 0.9rem;
+    }
+
+
+
+/*about page*/
+    .about {
+        margin: 3rem 0 0 0;
+        width: 100%;
+    }
+    .text2 {
+        margin: 1rem;
+    }
+    .text3 p {
+        margin-top: 1rem;
+    }
+    .container2 {
+        margin-left: 0.5rem;
+        width: 100%;
+    }
+    .container-item {
+        margin-bottom: 3rem;
+        width: 100%;
+    }
+    .row {
+        box-shadow: 0 0 1.2rem 0 #ccc;
+        padding: 50px;
+        margin: 20px;
+        width: 90%;
+    }
+
+
+/*Sign Up page*/
+
+    .container3 {
+        display: block;
+    }
+    .account {
+        width: 80%;
+    }
+    .send {
+        width: 100%;
+    }
+
+}
+
+

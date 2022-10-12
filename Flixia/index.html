@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--meta data-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!--CSS link-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--title-->
+    <title>Document</title>
+</head>
+
+<!--body-->
+<body>
+
+    <!--Navigation Bar-->
+    <div class="container">
+        <div class="header">
+            <span class="logo"><img src="/images/logo.png" alt=""></span>
+            <nav class="navbar">
+                <span class="hamburger">&#9776;</span>
+                <ul id="menu">
+                    <li> <a href="#home">Home</a> </li>
+                    <li> <a href="#about">Services</a> </li>
+                    <li> <a href="login.html">Sign In</a> </li>
+                    <li> <a href="signup.html">Sign Up</a> </li>
+                </ul>
+            </nav>
+        </div>
+    
+
+
+        <!--Main Body-->
+        <div class="main" id="home">
+            <div class="text1">
+                <p>Hi there,</p>
+                <h1>An online streaming <span> platform</span></h1>
+                <h5>Stream and get <span>entertained</span> at the comfort of your home <br> and seeing you is our favorite part of the day.</h5>
+                <button>Streaming Now</button>
+            </div>
+        </div>
+
+
+
+        <!--Service-->
+        <div class="about" id="about">
+            <div class="text2">
+                <h1> <span>Services</span> </h1>
+                <p>This is a streaming platform that's always ready to 
+                    give you the best and put a smile on you face. <br> We have various affordable
+                     packages for our customers to choose which suits them.
+                </p>
+            </div>
+
+            
+
+           
+            
+            <div class="container-item">
+                <img src="images/img2.jpg" width="50%" height="50%" class="img-left" alt="">
+                <div class="row text3">
+                    <div class="col-md-6">
+                        <h2>Video on Demand streaming</h2> 
+                        <p>This type of streaming allows you to schedule and watch your favorite TV shows online as when you wish. 
+                            It also has a distinctive feature where videos can be paused, resumed and rewind. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+
+
+            <div class="container-item change">
+                <div class="row text3 left">
+                    <div class="col-md-6">
+                        <h2>Music streaming</h2>
+                        <p>Just like the video streaming, music streaming allows you to watch your favorite artist 
+                            online with features like pause, rewind and resume. Your satisfaction is our optimum goal.
+                        </p>
+                    </div>
+                </div>
+                <img src="images/img3.jpg" width="50%" height="50%" class="img-right" alt="">
+            </div>
+
+
+
+            <div class="container-item">
+                <img src="images/img4.jpg" width="50%" height="50%" class="img-left" alt="">
+                <div class="row text3">
+                    <div class="col-md-6">
+                        <h2>Audio streaming</h2> 
+                        <p>Take video out of the picture, and you'll have an audio.
+                            With this you get to listen to audio that is transmitted over the internet in real-time
+                            without downloading it.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container-item change">
+                <div class="row text3 left">
+                    <div class="col-md-6">
+                        <h2>Fitness streaming</h2> 
+                        <p>You can join on-demand workout sessions and see your performance data live on the 
+                            screen. Also, you can see trainers who will guide you through exercises. 
+                        </p>
+                    </div>
+                </div>
+                <img src="images/img5.jpg" width="50%" height="400rem" class="img-right" alt="">
+            </div>
+        </div>
+
+
+      
+
+        <!--Footer-->
+
+        <div class="containerFooter">
+            <div class="textPix">
+                <h6><span class="menu-color">Flixia</span></h6>
+                <p class="txt-specials">Online streaming platform that is conversant with the growing 
+                    global trend and is ready to give you the sactisfactory content you desire.</p>
+            </div>
+        
+
+            <div class="social-links">
+                <i class="fa fa-linkedin socials" style="font-size:24px"></i>
+                <i class="fa fa-facebook-f socials" style="font-size:24px"></i>
+                <i class="fa fa-instagram socials" style="font-size:24px"></i>
+                <i class="fa fa-twitter socials" style="font-size:24px"></i>
+            </div>
+
+            <div class="copyright">
+                <p class="txt-specials">All Rights Reserved <br> Designed by <span class="menu-color">Pricelesssarah</span></p>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <script>
+       
+        var hamburger = document.querySelector('.hamburger');
+        var navbar = document.querySelector('#menu');
+
+        hamburger.addEventListener('click', () => {
+            
+            if(navbar.style.display === 'block'){
+                navbar.style.display = 'none';
+            }
+            else {
+                navbar.style.display = 'block';
+            }
+        })
+    </script>
+</body>
+</html>
